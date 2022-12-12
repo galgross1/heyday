@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="style" href="/style/dist/style.css" />
+    <title>control</title>
+</head>
+<body>
+    <button onclick="handleGetAllFiles()">GET ALL FILES</button>
+    <form onsubmit="handleAddFile(event)">
+        <input type="text" name="name" placeholder="Name" required>
+        <label>Type:</label>
+        <select className="fileOrFolder" name="Option">
+            <option value="file">file</option>
+            <option value="folder">folder</option>
+        </select>
+        <input type="text" name="parent folder name" placeholder="FolderName" required>     
+        <button onclick="handleAddUser(event)" type="submit">Delete</button>
+    </form>
+
+    <div id="root"></div>
+<script src="/control/dist/index.js"></script>
+</body>
+</html>
